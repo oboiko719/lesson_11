@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  min-height: 100%;
+  padding: 5px;
+}
+
+.header {
+  background-color: rgb(224, 193, 193);
+  margin: 0 auto;
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  padding: 15px;
+  z-index: 100;
+}
+
+.menu {
+  font-size: 0;
+  text-align: center;
+}
+
+.menu__item {
+  display: inline-block;
+  position: relative;
+}
+
+.menu__item:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 100px;
+}
+
+.menu__link {
+  font-size: 20px;
+  color:blue;
+  display: inline-block;
+  padding: 5px 0px;
+}
+
+.sub-menu{
+  background-color:aquamarine;
+  padding: 10px;
+  position: absolute;
+  min-width: 200px;
+  top: 130%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+.sub-menu__link {
+  font-size: 20px;
+  color:brown;
+}
+
+.block {
+  background: url(../img/nature.jpg) 0 0/cover no-repeat ;
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.block__cow {
+  position: absolute;
+  bottom: 100px;
+  right: -200px; 
+}
+
+.block:hover .block__cow{
+  right: 500px;
+ transition: 8s;
+}
+
+.block__sun {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+  max-width: 200px;
+}
+
+.block:hover .block__sun {
+  right: 800px;
+ transform: rotate(360deg);
+ transition: 3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
